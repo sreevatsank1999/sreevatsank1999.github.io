@@ -1,0 +1,81 @@
+---
+permalink: /
+title: "About Me"
+layout: archive
+author_profile: true
+redirect_from:
+  - /about/
+  - /about.html
+---
+
+{% include base_path %}
+
+<div class="home-grid">
+<div class="home-main">
+
+  <p class="home-lead">I'm a Ph.D. student in Electrical and Computer Engineering at <strong>UC San Diego</strong>. I build <strong>networks and systems for Physical AI</strong>: robots that sense the world, offload their thinking to the edge, and act over wireless links.</p>
+
+  <p>I work with Prof. Dinesh Bharadia in the <a href="https://wcsng.ucsd.edu/">WCSNG</a> lab, and my background is in wireless systems. Before Physical AI, I architected <a href="{{ base_path }}/research/#nomad">Nomad</a>, a 40 Gbit/s spectrum sensing system built for an IARPA program, and worked on PHY-layer datasets and machine learning for signal detection. I hold an M.S. from UC San Diego and a B.Tech. in Electrical Engineering from <strong>IIT Indore</strong>. Along the way I have interned at <strong>Qualcomm</strong>, <strong>JASR Systems</strong>, and <strong>Télécom Paris</strong>, and spent a year as a DevOps engineer at <strong>Tata Digital</strong>.</p>
+
+  <div class="callout callout--warm">
+    <span class="callout__icon" aria-hidden="true">💼</span>
+    <p><strong>Looking for Summer 2027 research internships</strong> in networked systems, wireless, and Physical AI. See my <a href="{{ base_path }}/cv/">CV</a>, or email me at <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>.</p>
+  </div>
+
+  <ul class="tag-list" aria-label="Research interests">
+    <li>Physical AI</li>
+    <li>Networked Systems</li>
+    <li>5G &amp; Open RAN</li>
+    <li>Multimodal Sensing</li>
+    <li>Edge Computing</li>
+    <li>Spectrum Sensing</li>
+    <li>ML for Wireless</li>
+  </ul>
+
+  <h2 class="section-title">Research Overview</h2>
+
+  <p>Robots increasingly offload perception and policy inference, such as vision-language-action models, to GPUs at the network edge. That puts the wireless network inside the robot's control loop. Every camera, LiDAR, and IMU stream for a control step has to reach the edge, together and on time, before the next action can be computed. Yet today's networks treat those streams as unrelated flows, and today's sensing stacks ignore the network. My research closes this gap from both sides. I quantify what Physical AI applications actually need from the network, design RAN mechanisms that deliver multimodal sensor data in lock-step, and build testbeds that expose the full path from sensing to action.</p>
+
+  <div class="callout">
+    <span class="callout__icon" aria-hidden="true">🏆</span>
+    <p>Ushasi Ghosh and I won the <strong>Qualcomm Innovation Fellowship 2026</strong> for <a href="{{ base_path }}/research/#mmsran">mmsRAN</a>, our proposal <em>When Multimodal Sensing Meets the RAN: Sensing-to-Action Autonomy at the Edge</em>.</p>
+  </div>
+
+  <div class="callout">
+    <span class="callout__icon" aria-hidden="true">🤖</span>
+    <p><a href="{{ base_path }}/research/#robonest">RoboNEST</a>, our testbed that brings robots, private 5G, and edge GPUs together for Physical AI research, appears as a demo at <strong>ACM MobiCom 2026</strong>.</p>
+  </div>
+
+  <h2 class="section-title">Selected Publications</h2>
+
+  <div class="pub-list">
+    {% assign selected = site.publications | where: "selected", true | sort: "date" | reverse %}
+    {% for pub in selected %}
+      {% include publication-card.html pub=pub compact=true %}
+    {% endfor %}
+  </div>
+
+  <p class="more-link"><a href="{{ base_path }}/publications/">All publications, with BibTeX &rarr;</a></p>
+
+</div>
+
+<aside class="news" aria-labelledby="news-title">
+  <h2 class="news__title" id="news-title"><span aria-hidden="true">📣</span> News</h2>
+  {% assign current_year = "" %}
+  {% for item in site.data.news %}
+    {% assign when = item.date | append: "" %}
+    {% assign year = when | slice: 0, 4 %}
+    {% if year != current_year %}
+      {% unless forloop.first %}</ul>{% endunless %}
+      <span class="news__year">{{ year }}</span>
+      <ul class="news__list">
+      {% assign current_year = year %}
+    {% endif %}
+      <li class="news__item{% if forloop.first %} is-latest{% endif %}">
+        {% if when.size > 4 %}<span class="news__date">{{ when | append: "-01" | date: "%b" }}</span>{% endif %}
+        {{ item.text | markdownify | remove: "<p>" | remove: "</p>" | strip }}
+      </li>
+    {% if forloop.last %}</ul>{% endif %}
+  {% endfor %}
+</aside>
+</div>

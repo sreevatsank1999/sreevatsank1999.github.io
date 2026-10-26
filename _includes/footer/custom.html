@@ -1,0 +1,24 @@
+<!-- start custom footer snippets -->
+
+<!-- BibTeX toggle and copy buttons on publication cards -->
+<script>
+  document.addEventListener("click", function (event) {
+    var toggle = event.target.closest("[data-bibtex-toggle]");
+    if (toggle) {
+      var panel = document.getElementById(toggle.getAttribute("aria-controls"));
+      var opening = panel.hidden;
+      panel.hidden = !opening;
+      toggle.setAttribute("aria-expanded", opening ? "true" : "false");
+      return;
+    }
+    var copy = event.target.closest("[data-bibtex-copy]");
+    if (copy && navigator.clipboard) {
+      navigator.clipboard.writeText(copy.nextElementSibling.textContent).then(function () {
+        copy.textContent = "Copied";
+        setTimeout(function () { copy.textContent = "Copy"; }, 1500);
+      });
+    }
+  });
+</script>
+
+<!-- end custom footer snippets -->

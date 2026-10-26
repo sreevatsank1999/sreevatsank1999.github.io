@@ -1,0 +1,53 @@
+---
+layout: archive
+title: "Research"
+permalink: /research/
+author_profile: true
+---
+
+{% include base_path %}
+
+<p class="section-intro">Projects grouped by theme, newest first. Figures come from the corresponding papers, proposals, posters, and reports; click one to see it full size.</p>
+
+{% for group in site.data.research_groups %}
+  {% assign projects = site.research | where: "group", group.id | sort: "order" %}
+  {% if projects.size > 0 %}
+  <section class="research-group" id="{{ group.id }}">
+    <h2 class="section-title">{{ group.title }}{% if group.period %} <span class="research-group__period">{{ group.period }}</span>{% endif %}</h2>
+    {% if group.blurb %}<p class="section-intro">{{ group.blurb }}</p>{% endif %}
+
+    {% if group.compact %}
+    <div class="mini-grid">
+      {% for p in projects %}
+      <article class="mini-card" id="{{ p.slug }}">
+        {% if p.image %}<a class="project-figure" href="{{ base_path }}{{ p.image }}" target="_blank" rel="noopener"><img src="{{ base_path }}{{ p.image }}" alt="{{ p.image_alt | default: p.title }}" loading="lazy"></a>{% endif %}
+        <h3 class="mini-card__title">{{ p.title }}</h3>
+        {% if p.course or p.team %}<div class="mini-card__sub">{{ p.course }}{% if p.course and p.team %} &middot; {% endif %}{{ p.team }}</div>{% endif %}
+        {{ p.content | markdownify }}
+        {% if p.links %}<div class="link-row">{% include link-buttons.html links=p.links %}</div>{% endif %}
+      </article>
+      {% endfor %}
+    </div>
+    {% else %}
+      {% for p in projects %}
+      {% if p.image %}{% if p.figure == "wide" %}{% assign layout_class = "project-card--wide" %}{% else %}{% assign layout_class = "project-card--side" %}{% endif %}{% else %}{% assign layout_class = "" %}{% endif %}
+      <article class="project-card {{ layout_class }}" id="{{ p.slug }}">
+        <h3 class="project-card__title">{{ p.title }}</h3>
+        <div class="project-card__meta">
+          {% if p.period %}<span>{{ p.period }}</span>{% endif %}
+          {% for badge in p.badges %}<span class="pill">{{ badge }}</span>{% endfor %}
+          {% if p.team %}<span class="project-card__team">{{ p.team }}</span>{% endif %}
+        </div>
+        <div class="project-card__body">
+          {% if p.image %}<a class="project-figure" href="{{ base_path }}{{ p.image }}" target="_blank" rel="noopener"><img src="{{ base_path }}{{ p.image }}" alt="{{ p.image_alt | default: p.title }}" loading="lazy"></a>{% endif %}
+          <div class="project-card__text">
+            {{ p.content | markdownify }}
+            {% if p.links %}<div class="link-row">{% include link-buttons.html links=p.links %}</div>{% endif %}
+          </div>
+        </div>
+      </article>
+      {% endfor %}
+    {% endif %}
+  </section>
+  {% endif %}
+{% endfor %}

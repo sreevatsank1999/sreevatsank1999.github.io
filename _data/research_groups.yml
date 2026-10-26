@@ -1,0 +1,21 @@
+# Sections of the Research page, in display order. Each project in _research/
+# names its section with `group: <id>`.
+
+- id: physical-ai
+  title: "Systems for Physical AI"
+  period: "2025 – present"
+  blurb: "Robots increasingly offload perception and policy inference to GPUs at the network edge, which puts the wireless network inside their control loop. These projects measure what that loop needs from the network and build the networks, schedulers, and testbeds to deliver it."
+
+- id: spectrum
+  title: "PHY-Layer Spectrum Intelligence"
+  period: "2022 – 2026"
+  blurb: "Systems, datasets, and learning methods for understanding what is on the air, from real-time wideband sensing to detectors that can be measured, and fooled."
+
+- id: earlier
+  title: "Earlier Research"
+  period: "2019 – 2022"
+
+- id: course
+  title: "Selected Graduate Projects"
+  period: "UC San Diego"
+  compact: true

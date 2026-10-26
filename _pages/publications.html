@@ -1,0 +1,24 @@
+---
+layout: archive
+title: "Publications"
+permalink: /publications/
+author_profile: true
+---
+
+{% include base_path %}
+
+{% if site.author.googlescholar %}
+<p class="section-intro">You can also find my articles on my <a href="{{ site.author.googlescholar }}">Google Scholar profile</a>.</p>
+{% endif %}
+
+{% for category in site.publication_category %}
+  {% assign pubs = site.publications | where: "category", category[0] | sort: "date" | reverse %}
+  {% if pubs.size > 0 %}
+  <h2 class="section-title">{{ category[1].title }}</h2>
+  <div class="pub-list">
+    {% for pub in pubs %}
+      {% include publication-card.html pub=pub %}
+    {% endfor %}
+  </div>
+  {% endif %}
+{% endfor %}

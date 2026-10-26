@@ -1,0 +1,21 @@
+{% comment %}
+  Outline link buttons. Each entry in `include.links` has a `label` and a `url`,
+  and may set `icon` to any Font Awesome / Academicons class; otherwise the icon
+  is picked from the label.
+{% endcomment %}
+{% for link in include.links %}
+  {% assign label = link.label | downcase %}
+  {% if link.icon %}{% assign icon = link.icon %}
+  {% elsif label contains "pdf" %}{% assign icon = "fa-solid fa-file-pdf" %}
+  {% elsif label contains "paper" or label contains "report" %}{% assign icon = "fa-solid fa-file-lines" %}
+  {% elsif label contains "project" or label contains "website" %}{% assign icon = "fa-solid fa-globe" %}
+  {% elsif label contains "poster" %}{% assign icon = "fa-solid fa-image" %}
+  {% elsif label contains "proposal" %}{% assign icon = "fa-solid fa-file-signature" %}
+  {% elsif label contains "slides" %}{% assign icon = "fa-solid fa-person-chalkboard" %}
+  {% elsif label contains "code" %}{% assign icon = "fa-brands fa-github" %}
+  {% elsif label contains "demo" or label contains "video" %}{% assign icon = "fa-solid fa-circle-play" %}
+  {% elsif label contains "arxiv" %}{% assign icon = "ai ai-arxiv" %}
+  {% else %}{% assign icon = "fa-solid fa-link" %}
+  {% endif %}
+  <a class="btn-link" href="{{ link.url }}" target="_blank" rel="noopener"><i class="{{ icon }}" aria-hidden="true"></i> {{ link.label }}</a>
+{% endfor %}

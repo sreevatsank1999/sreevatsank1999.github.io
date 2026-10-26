@@ -1,0 +1,26 @@
+{
+  "name": "sreevatsank1999.github.io",
+  "version": "1.0.0",
+  "private": true,
+  "description": "JavaScript build scripts for Sreevatsank Kadaveru's personal website (AcademicPages Jekyll template)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sreevatsank1999/sreevatsank1999.github.io"
+  },
+  "homepage": "https://sreevatsank1999.github.io",
+  "contributors": [
+    "Michael Rose",
+    "Robert Zupko"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "jslint": "^0.12.1",
+    "onchange": "^7.1.0",
+    "uglify-js": "^3.19.3"
+  },
+  "scripts": {
+    "uglify": "uglifyjs assets/js/plugins/jquery.greedy-navigation.js assets/js/_main.js assets/js/theme.js -c -m -o assets/js/main.min.js",
+    "watch:js": "onchange \"assets/js/**/*.js\" -e \"assets/js/main.min.js\" -- npm run build:js",
+    "build:js": "npm run uglify"
+  }
+}

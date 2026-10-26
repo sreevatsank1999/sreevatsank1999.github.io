@@ -1,0 +1,210 @@
+---
+layout: archive
+title: "CV"
+permalink: /cv/
+author_profile: true
+redirect_from:
+  - /resume
+  - /resume/
+---
+
+{% include base_path %}
+
+{% if site.cv_pdf %}
+<div class="cv-actions">
+  <a class="btn-link" href="{{ base_path }}/files/{{ site.cv_pdf }}"><i class="fa-solid fa-download" aria-hidden="true"></i> Download PDF</a>
+</div>
+{% endif %}
+
+<h2 class="section-title">Education</h2>
+
+<div class="cv-entry">
+  <div class="cv-entry__when">2023 – present</div>
+  <div>
+    <p class="cv-entry__title">Ph.D., Electrical and Computer Engineering</p>
+    <p class="cv-entry__org">University of California, San Diego</p>
+    <p class="cv-entry__note">Communication Theory and Systems &middot; Advisor: Prof. Dinesh Bharadia</p>
+  </div>
+</div>
+
+<div class="cv-entry">
+  <div class="cv-entry__when">2021 – 2023</div>
+  <div>
+    <p class="cv-entry__title">M.S., Electrical and Computer Engineering</p>
+    <p class="cv-entry__org">University of California, San Diego</p>
+    <p class="cv-entry__note">Communication Theory and Systems</p>
+  </div>
+</div>
+
+<div class="cv-entry">
+  <div class="cv-entry__when">2022 – 2023</div>
+  <div>
+    <p class="cv-entry__title">Certificate, Technology Management Program</p>
+    <p class="cv-entry__org">Rady School of Management, UC San Diego</p>
+  </div>
+</div>
+
+<div class="cv-entry">
+  <div class="cv-entry__when">2016 – 2020</div>
+  <div>
+    <p class="cv-entry__title">B.Tech., Electrical Engineering</p>
+    <p class="cv-entry__org">Indian Institute of Technology Indore</p>
+  </div>
+</div>
+
+<h2 class="section-title">Experience</h2>
+
+<div class="cv-entry">
+  <div class="cv-entry__when">Jun – Sep 2026</div>
+  <div>
+    <p class="cv-entry__title">Research Intern, Wireless R&amp;D</p>
+    <p class="cv-entry__org">Qualcomm, San Diego</p>
+    <ul>
+      <li>Built a framework for rigorously studying LLMs on RF + vision multimodal sensing tasks. It traces each failure to a gap in domain knowledge, domain reasoning, or domain-specific data interpretation, and prescribes targeted fine-tuning remedies.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="cv-entry">
+  <div class="cv-entry__when">Jun – Sep 2022</div>
+  <div>
+    <p class="cv-entry__title">Research Intern</p>
+    <p class="cv-entry__org">JASR Systems, San Diego</p>
+    <ul>
+      <li>Blind detection and tracking of low-probability-of-intercept signals. Developed a statistical approach to wideband spectrum sensing that improved on state-of-the-art prediction and supports multiple receivers through an optimal cooperative scheduling algorithm. <a href="https://drive.google.com/file/d/16-F9lr1lG-SX6eIBbNx_kEmRo0NkkKR_/view?usp=sharing">[Poster]</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="cv-entry">
+  <div class="cv-entry__when">Sep 2020 – Sep 2021</div>
+  <div>
+    <p class="cv-entry__title">DevOps Engineer</p>
+    <p class="cv-entry__org">Tata Digital, Mumbai</p>
+    <ul>
+      <li>Built highly automated CI/CD workflows on Kubernetes, improving reliability and efficiency by 90%.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="cv-entry">
+  <div class="cv-entry__when">May – Aug 2019</div>
+  <div>
+    <p class="cv-entry__title">Summer Research Intern</p>
+    <p class="cv-entry__org">Télécom Paris, France</p>
+    <ul>
+      <li>Improving the reliability of multi-cell MIMO mission-critical systems with LDPC codes in 5G. Demonstrated a latency–reliability trade-off in LDPC code selection for video traffic. <a href="https://docs.google.com/presentation/d/16wf2KeSh17ceM2Wtr9Yf5F4k28tK5_NS/edit?usp=share_link&amp;ouid=113675201947408457642&amp;rtpof=true&amp;sd=true">[Slides]</a></li>
+    </ul>
+  </div>
+</div>
+
+<h2 class="section-title">Research</h2>
+
+<div class="cv-entry">
+  <div class="cv-entry__when">2025 – present</div>
+  <div>
+    <p class="cv-entry__title">Systems for Physical AI</p>
+    <p class="cv-entry__note"><a href="{{ base_path }}/research/#robonest">RoboNEST</a> testbed, <a href="{{ base_path }}/research/#mmsran">mmsRAN</a> multimodal uplink scheduling, <a href="{{ base_path }}/research/#paiqoo">PAIQoO</a>, and the <a href="{{ base_path }}/research/#p2sif">P2SIF</a> sensor integration framework for LLMs</p>
+  </div>
+</div>
+
+<div class="cv-entry">
+  <div class="cv-entry__when">2024 – 2026</div>
+  <div>
+    <p class="cv-entry__title">PHY-Layer Spectrum Sensing</p>
+    <p class="cv-entry__note"><a href="{{ base_path }}/research/#phynet">PHYNet</a> labelled PHY dataset and <a href="{{ base_path }}/research/#camophylage">CamoPHYlage</a> adversarial waveform mimicking</p>
+  </div>
+</div>
+
+<div class="cv-entry">
+  <div class="cv-entry__when">Nov 2022 – Mar 2024</div>
+  <div>
+    <p class="cv-entry__title">Spectrum Intelligence Systems (IARPA-funded)</p>
+    <p class="cv-entry__note"><a href="{{ base_path }}/research/#nomad">Nomad</a> 40 Gbit/s spectrum sensing system and <a href="{{ base_path }}/research/#rfyolo">rfYOLO</a> phase-aware signal detection</p>
+  </div>
+</div>
+
+<div class="cv-entry">
+  <div class="cv-entry__when">Mar – Nov 2022</div>
+  <div>
+    <p class="cv-entry__title">Federated Learning</p>
+    <p class="cv-entry__note"><a href="{{ base_path }}/research/#curriculum-fl">Curriculum learning in federated settings</a> (ICCV 2023)</p>
+  </div>
+</div>
+
+<h2 class="section-title">Publications</h2>
+
+<div class="pub-list">
+  {% assign pubs = site.publications | sort: "date" | reverse %}
+  {% for pub in pubs %}
+    {% include publication-card.html pub=pub compact=true %}
+  {% endfor %}
+</div>
+
+<h2 class="section-title">Awards &amp; Fellowships</h2>
+
+<div class="cv-entry">
+  <div class="cv-entry__when">2026</div>
+  <div><p><a href="https://www.qualcomm.com/research/university-relations/innovation-fellowship/2026-north-america">Qualcomm Innovation Fellowship</a>, with Ushasi Ghosh</p></div>
+</div>
+<div class="cv-entry">
+  <div class="cv-entry__when">2023</div>
+  <div><p><a href="https://clpf.org/ucsd-welcome-breakfast-of-the-2023-2024-powell-fellows/">Powell Foundation Fellowship</a></p></div>
+</div>
+<div class="cv-entry">
+  <div class="cv-entry__when">2023</div>
+  <div><p>Shah Family Entrepreneurial Fellowship</p></div>
+</div>
+
+<h2 class="section-title">Teaching &amp; Leadership</h2>
+
+<div class="cv-entry">
+  <div class="cv-entry__when">2025 – 2026</div>
+  <div><p>Teaching Assistant, ECE 257B: Principles of Wireless Communication, UC San Diego</p></div>
+</div>
+<div class="cv-entry">
+  <div class="cv-entry__when">2023 – 2025</div>
+  <div><p>Representative, Graduate &amp; Professional Student Association, UC San Diego</p></div>
+</div>
+<div class="cv-entry">
+  <div class="cv-entry__when">2023 – 2025</div>
+  <div><p>Board Member, ECE Graduate Student Council, UC San Diego</p></div>
+</div>
+<div class="cv-entry">
+  <div class="cv-entry__when">2018 – 2019</div>
+  <div><p>President, Electronics Club, IIT Indore</p></div>
+</div>
+<div class="cv-entry">
+  <div class="cv-entry__when">2018 – 2019</div>
+  <div><p>Technical Lead, Team Robocon, IIT Indore</p></div>
+</div>
+
+<h2 class="section-title">Service</h2>
+
+<div class="cv-entry">
+  <div class="cv-entry__when">2026</div>
+  <div><p>Reviewer and Student Panelist, S3 Workshop, ACM MobiCom</p></div>
+</div>
+<div class="cv-entry">
+  <div class="cv-entry__when">2026</div>
+  <div><p>Artifact Evaluation Committee, USENIX NSDI</p></div>
+</div>
+<div class="cv-entry">
+  <div class="cv-entry__when">2025</div>
+  <div><p>Artifact Evaluation Committee, ACM SIGCOMM</p></div>
+</div>
+<div class="cv-entry">
+  <div class="cv-entry__when">2024</div>
+  <div><p>Award Committee, Graduate &amp; Professional Student Association, UC San Diego</p></div>
+</div>
+
+<h2 class="section-title">Skills</h2>
+
+<dl class="cv-skills">
+  <dt>Programming</dt>
+  <dd>C++, Python, MATLAB</dd>
+  <dt>Systems &amp; tools</dt>
+  <dd>Docker, Kubernetes, Linux, ROS</dd>
+  <dt>Wireless</dt>
+  <dd>GNU Radio, software-defined radios</dd>
+</dl>
