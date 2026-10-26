@@ -7,14 +7,14 @@ author_profile: true
 
 {% include base_path %}
 
-<p class="section-intro">Projects grouped by theme, newest first. Figures come from the corresponding papers, proposals, posters, and reports; click one to see it full size.</p>
+<p class="section-intro">Projects grouped by theme, newest first. Figures come from the corresponding papers, proposals, posters, talks, and reports; click one to see it full size.</p>
 
 {% for group in site.data.research_groups %}
   {% assign projects = site.research | where: "group", group.id | sort: "order" %}
   {% if projects.size > 0 %}
   <section class="research-group" id="{{ group.id }}">
     <h2 class="section-title">{{ group.title }}{% if group.period %} <span class="research-group__period">{{ group.period }}</span>{% endif %}</h2>
-    {% if group.blurb %}<p class="section-intro">{{ group.blurb }}</p>{% endif %}
+    {% if group.blurb %}<p class="section-intro">{{ group.blurb | markdownify | remove: "<p>" | remove: "</p>" | strip }}</p>{% endif %}
 
     {% if group.compact %}
     <div class="mini-grid">

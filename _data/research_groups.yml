@@ -1,15 +1,15 @@
 # Sections of the Research page, in display order. Each project in _research/
-# names its section with `group: <id>`.
+# names its section with `group: <id>`. Blurbs can use Markdown links.
 
 - id: physical-ai
   title: "Systems for Physical AI"
   period: "2025 – present"
-  blurb: "Robots increasingly offload perception and policy inference to GPUs at the network edge, which puts the wireless network inside their control loop. These projects measure what that loop needs from the network and build the networks, schedulers, and testbeds to deliver it."
+  blurb: "Robots increasingly offload perception and policy inference to GPUs at the network edge, which puts the wireless network inside their control loop. These projects measure what that loop needs from the network and build the networks, schedulers, and testbeds to deliver it. RoboNEST and mmsRAN are part of the [EdgeRIC](https://edgeric.ucsd.edu/) project."
 
 - id: spectrum
   title: "PHY-Layer Spectrum Intelligence"
   period: "2022 – 2026"
-  blurb: "Systems, datasets, and learning methods for understanding what is on the air, from real-time wideband sensing to detectors that can be measured, and fooled."
+  blurb: "Systems, datasets, and learning methods for understanding what is on the air, from real-time wideband sensing to detectors that can be measured, and fooled. Most of this work is part of the WCSNG lab's [spectrum sensing research](https://wcsng.ucsd.edu/spectrum_sensing.html)."
 
 - id: earlier
   title: "Earlier Research"
