@@ -13,9 +13,9 @@ title                    : "Sreevatsank Kadaveru"
 title_separator          : "-"
 name                     : &name "Sreevatsank Kadaveru"
 description              : &description "Sreevatsank Kadaveru is a Ph.D. student at UC San Diego building networks and systems for Physical AI."
-url                      : https://sreevatsank1999.github.io # The base hostname & protocol for your site
+url                      : https://sreevatsankk.github.io # The base hostname & protocol for your site
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "sreevatsank1999/sreevatsank1999.github.io"
+repository               : "sreevatsankk/sreevatsankk.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -50,7 +50,7 @@ author:
   bitbucket        : # Username
   codepen          : # Username
   dribbble         : # Username
-  github           : "sreevatsank1999"
+  github           : "sreevatsankk"
   kaggle           : # Username
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")
 
@@ -135,7 +135,7 @@ social:
   type                   : Person
   name                   : *name
   links: # An array of links to social media profiles
-    - "https://github.com/sreevatsank1999"
+    - "https://github.com/sreevatsankk"
     - "https://www.linkedin.com/in/sreevatsank-k"
     - "https://scholar.google.com/citations?user=dWqKf1AAAAAJ"
 

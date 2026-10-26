@@ -1,4 +1,4 @@
-# sreevatsank1999.github.io
+# sreevatsankk.github.io
 
 Personal website of **Sreevatsank Kadaveru**, Ph.D. student at UC San Diego (WCSNG lab), building networks and systems for Physical AI.
 
@@ -89,9 +89,9 @@ If you would rather not install Ruby, the template's `Dockerfile`, `docker-compo
 
 ## Deploy
 
-1. Create a public GitHub repository named `sreevatsank1999.github.io` and push this folder to its `main` branch.
+1. Create a public GitHub repository named `sreevatsankk.github.io` and push this folder to its `main` branch.
 2. In the repository, go to **Settings → Pages** and set **Source** to **GitHub Actions**.
-3. Every push to `main` then runs `.github/workflows/jekyll.yml`, which builds the site and publishes it at <https://sreevatsank1999.github.io>.
+3. Every push to `main` then runs `.github/workflows/jekyll.yml`, which builds the site and publishes it at <https://sreevatsankk.github.io>.
 
 ## Credits
 
