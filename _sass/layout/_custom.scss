@@ -137,6 +137,12 @@ html[data-theme="dark"] {
   }
 }
 
+.callout__icon {
+  flex: none;
+  font-size: 1.3em;
+  line-height: 1.2;
+}
+
 .callout--warm {
   border-left-color: var(--sk-warm-border);
   background: var(--sk-warm-bg);
