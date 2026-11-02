@@ -25,3 +25,6 @@ package-lock.json
 
 # Ignore the main.min.js since it should be built as part of jekyll-build.yml
 assets/js/main.min.js
+
+# Private tools: a separate private repo cloned here, never part of this public repo
+/tools/

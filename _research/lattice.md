@@ -8,4 +8,4 @@ links:
   - label: Report
     url: https://drive.google.com/file/d/1IT7jyHXKjPVILGaSXuS-YBVUZCNKq731/view?usp=drive_link
 ---
-Benchmarked the LLL, BKZ, Slide, and self-dual BKZ reduction algorithms on commodity hardware, trading basis quality against CPU time and tracking how both scale with lattice dimension.
+Evaluated the LLL, BKZ, Slide, and self-dual BKZ reduction algorithms on commodity hardware, studying the trade-off between basis quality and CPU time and how both scale with lattice dimension.

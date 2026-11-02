@@ -10,6 +10,11 @@ redirect_from:
 
 {% include base_path %}
 
+{% comment %}
+  This page mirrors the resume: same sections, same order, same sentences, and the same
+  link labels. Update it when the resume changes.
+{% endcomment %}
+
 {% if site.cv_pdf %}
 <div class="cv-actions">
   <a class="btn-link" href="{{ base_path }}/files/{{ site.cv_pdf }}"><i class="fa-solid fa-download" aria-hidden="true"></i> Download PDF</a>
@@ -19,192 +24,192 @@ redirect_from:
 <h2 class="section-title">Education</h2>
 
 <div class="cv-entry">
-  <div class="cv-entry__when">2023 – present</div>
-  <div>
-    <p class="cv-entry__title">Ph.D., Electrical and Computer Engineering</p>
-    <p class="cv-entry__org">University of California, San Diego</p>
-    <p class="cv-entry__note">Communication Theory and Systems &middot; Advisor: Prof. <a href="https://dineshb-ucsd.github.io/">Dinesh Bharadia</a>, <a href="https://wcsng.ucsd.edu/">WCSNG lab</a></p>
+  <div class="cv-entry__head">
+    <span class="cv-entry__title"><strong>PhD</strong>, <em>University of California</em>, San Diego.</span>
+    <span class="cv-entry__when">2023–Now</span>
   </div>
+  <p class="cv-entry__note">Communication Theory and Systems | PI: <a href="https://dineshb-ucsd.github.io/">Dinesh Bharadia</a></p>
 </div>
 
 <div class="cv-entry">
-  <div class="cv-entry__when">2021 – 2023</div>
-  <div>
-    <p class="cv-entry__title">M.S., Electrical and Computer Engineering</p>
-    <p class="cv-entry__org">University of California, San Diego</p>
-    <p class="cv-entry__note">Communication Theory and Systems</p>
+  <div class="cv-entry__head">
+    <span class="cv-entry__title"><strong>Masters</strong>, <em>University of California</em>, San Diego.</span>
+    <span class="cv-entry__when">2021–2023</span>
   </div>
+  <p class="cv-entry__note">Communication Theory and Systems | ECE Department</p>
 </div>
 
 <div class="cv-entry">
-  <div class="cv-entry__when">2022 – 2023</div>
-  <div>
-    <p class="cv-entry__title">Certificate, Technology Management Program</p>
-    <p class="cv-entry__org">Rady School of Management, UC San Diego</p>
+  <div class="cv-entry__head">
+    <span class="cv-entry__title"><strong>Certificate</strong>, <em>Rady School of Management</em>, San Diego.</span>
+    <span class="cv-entry__when">2022–2023</span>
   </div>
+  <p class="cv-entry__note">Technology Management Program</p>
 </div>
 
 <div class="cv-entry">
-  <div class="cv-entry__when">2016 – 2020</div>
-  <div>
-    <p class="cv-entry__title">B.Tech., Electrical Engineering</p>
-    <p class="cv-entry__org">Indian Institute of Technology Indore</p>
+  <div class="cv-entry__head">
+    <span class="cv-entry__title"><strong>Bachelors</strong>, <em>Indian Institute of Technology</em>, Indore.</span>
+    <span class="cv-entry__when">2016–2020</span>
   </div>
+  <p class="cv-entry__note">Electrical Engineering</p>
 </div>
 
 <h2 class="section-title">Experience</h2>
 
 <div class="cv-entry">
-  <div class="cv-entry__when">Jun – Sep 2026</div>
-  <div>
-    <p class="cv-entry__title">Research Intern, Wireless R&amp;D</p>
-    <p class="cv-entry__org">Qualcomm, San Diego</p>
-    <ul>
-      <li>Built a framework for rigorously studying LLMs on RF + vision multimodal sensing tasks. It traces each failure to a gap in domain knowledge, domain reasoning, or domain-specific data interpretation, and prescribes targeted fine-tuning remedies.</li>
-    </ul>
+  <div class="cv-entry__head">
+    <span class="cv-entry__title"><strong>WRD, Qualcomm</strong>, <em>Research Intern</em>, San Diego.</span>
+    <span class="cv-entry__when">Jun’26–Sept’26</span>
   </div>
+  <p class="cv-entry__note">Developed a rigorous framework to study LLMs for RF+Vision based multimodal sensing tasks, to identify and isolate failures to gaps in domain knowledge, domain reasoning or domain-specific data interpretation, and prescribe targeted fine-tuning remedies.</p>
 </div>
 
 <div class="cv-entry">
-  <div class="cv-entry__when">Jun – Sep 2022</div>
-  <div>
-    <p class="cv-entry__title">Research Intern</p>
-    <p class="cv-entry__org">JASR Systems, San Diego</p>
-    <ul>
-      <li>Blind detection and tracking of low-probability-of-intercept signals. Developed a statistical approach to wideband spectrum sensing that improved on state-of-the-art prediction and supports multiple receivers through an optimal cooperative scheduling algorithm. <a href="https://drive.google.com/file/d/16-F9lr1lG-SX6eIBbNx_kEmRo0NkkKR_/view?usp=sharing">[Poster]</a></li>
-    </ul>
+  <div class="cv-entry__head">
+    <span class="cv-entry__title"><strong>JASR Systems</strong>, <em>Research Intern</em>, San Diego.</span>
+    <span class="cv-entry__when">Jun’22–Sept’22</span>
   </div>
+  <p class="cv-entry__note">Blind Detection and Tracking of Low Probability of Intercept Signals.</p>
+  <ul>
+    <li>Developed a novel statistical approach for wideband spectrum sensing, improving state-of-the-art prediction and enabling multi-receiver capability via an optimal cooperative scheduling algorithm. <a href="https://drive.google.com/file/d/16-F9lr1lG-SX6eIBbNx_kEmRo0NkkKR_/view?usp=sharing">[Poster]</a></li>
+  </ul>
 </div>
 
 <div class="cv-entry">
-  <div class="cv-entry__when">Sep 2020 – Sep 2021</div>
-  <div>
-    <p class="cv-entry__title">DevOps Engineer</p>
-    <p class="cv-entry__org">Tata Digital, Mumbai</p>
-    <ul>
-      <li>Built highly automated CI/CD workflows on Kubernetes, improving reliability and efficiency by 90%.</li>
-    </ul>
+  <div class="cv-entry__head">
+    <span class="cv-entry__title"><strong>Tata Digital</strong>, <em>DevOps Engineer</em>, Mumbai.</span>
+    <span class="cv-entry__when">Sept’20–Sept’21</span>
   </div>
+  <p class="cv-entry__note">Developed highly automated CI/CD Kubernetes workflows improving reliability and efficiency by 90%.</p>
 </div>
 
 <div class="cv-entry">
-  <div class="cv-entry__when">May – Aug 2019</div>
-  <div>
-    <p class="cv-entry__title">Summer Research Intern</p>
-    <p class="cv-entry__org">Télécom Paris, France</p>
-    <ul>
-      <li>Improving the reliability of multi-cell MIMO mission-critical systems with LDPC codes in 5G. Demonstrated a latency–reliability trade-off in LDPC code selection for video traffic. <a href="https://docs.google.com/presentation/d/16wf2KeSh17ceM2Wtr9Yf5F4k28tK5_NS/edit?usp=share_link&amp;ouid=113675201947408457642&amp;rtpof=true&amp;sd=true">[Slides]</a></li>
-    </ul>
+  <div class="cv-entry__head">
+    <span class="cv-entry__title"><strong>Télécom Paris</strong>, <em>Summer Research Intern</em>, France.</span>
+    <span class="cv-entry__when">May’19–Aug’19</span>
   </div>
+  <p class="cv-entry__note">Improving Reliability of MIMO Mission Critical Systems using LDPC in 5G.</p>
+  <ul>
+    <li>Demonstrated a novel latency-reliability trade-off in LDPC code selection for video traffic</li>
+  </ul>
 </div>
 
 <h2 class="section-title">Research</h2>
 
 <div class="cv-entry">
-  <div class="cv-entry__when">2025 – present</div>
-  <div>
-    <p class="cv-entry__title">Systems for Physical AI</p>
-    <p class="cv-entry__note"><a href="{{ base_path }}/research/#robonest">RoboNEST</a> testbed and <a href="{{ base_path }}/research/#mmsran">mmsRAN</a> multimodal uplink scheduling with the <a href="https://edgeric.ucsd.edu/">EdgeRIC</a> team, <a href="{{ base_path }}/research/#paiqoo">PAIQoO</a>, and the <a href="{{ base_path }}/research/#p2sif">P2SIF</a> sensor integration framework for LLMs</p>
+  <div class="cv-entry__head">
+    <span class="cv-entry__title"><strong>Systems for Physical AI</strong>.</span>
+    <span class="cv-entry__when">Jun’25–Now</span>
   </div>
+  <ul>
+    <li><strong>PAIQoO</strong>: Quantifying the network requirements of Physical AI applications
+      <ul>
+        <li>Characterizing how sensor fidelity and end-to-end latency trade off in robotic task performance</li>
+      </ul>
+    </li>
+    <li><strong>mmsRAN</strong>: Radio Access Networks for Physical AI <a href="https://dl.acm.org/doi/abs/10.1145/3795866.3844782">[Paper]</a>
+      <ul>
+        <li>Building an Uplink Scheduler for Multimodal sensor flows that need to be low latency, synchronized and in lock-step order.</li>
+      </ul>
+    </li>
+    <li><strong>P2SIF</strong>: Plug-n-Play Sensor Integration Framework <a href="https://drive.google.com/file/d/1ftWI2YqR6nS3bKjvxw3UFfHv4UBvn5-R/view?usp=drive_link">[Proposal]</a>
+      <ul>
+        <li>Developed a decoupled architecture for new modality integration into existing LLMs without needing to modify LLM weights</li>
+      </ul>
+    </li>
+  </ul>
 </div>
 
 <div class="cv-entry">
-  <div class="cv-entry__when">2024 – 2026</div>
-  <div>
-    <p class="cv-entry__title">PHY-Layer Spectrum Sensing</p>
-    <p class="cv-entry__note"><a href="{{ base_path }}/research/#phynet">PHYNet</a> labelled PHY dataset and <a href="{{ base_path }}/research/#camophylage">CamoPHYlage</a> adversarial waveform mimicking, part of WCSNG's <a href="https://wcsng.ucsd.edu/spectrum_sensing.html">spectrum sensing research</a></p>
+  <div class="cv-entry__head">
+    <span class="cv-entry__title"><strong>PHY layer Spectrum sensing</strong>.</span>
+    <span class="cv-entry__when">2024–2026</span>
   </div>
+  <ul>
+    <li><strong>PHYNet</strong>: A gold-standard PHY layer labelled dataset
+      <ul>
+        <li>Establishing a standard for evaluating PHY layer algorithms by building a multi-purpose labelled PHY dataset</li>
+        <li>Studied the problem of PHY spectrum ignorance in today’s world</li>
+      </ul>
+    </li>
+    <li><strong>CamoPHYlage</strong>: Hiding signals in plain sight
+      <ul>
+        <li>Developed adversarial mimicking techniques to evade all PHY layer detectors, enabling surreptitious communication in plain sight</li>
+      </ul>
+    </li>
+  </ul>
 </div>
 
 <div class="cv-entry">
-  <div class="cv-entry__when">Nov 2022 – Mar 2024</div>
-  <div>
-    <p class="cv-entry__title">Spectrum Intelligence Systems (IARPA-funded)</p>
-    <p class="cv-entry__note"><a href="{{ base_path }}/research/#nomad">Nomad</a> 40 Gbit/s spectrum sensing system and <a href="{{ base_path }}/research/#rfyolo">rfYOLO</a> phase-aware signal detection</p>
+  <div class="cv-entry__head">
+    <span class="cv-entry__title"><strong>Spectrum Intelligence Systems</strong>, <em>IARPA funded project</em>.</span>
+    <span class="cv-entry__when">Nov’22–Mar’24</span>
   </div>
+  <ul>
+    <li><strong>rfYOLO</strong>: Phase modality for better detection
+      <ul>
+        <li>Developed phase transform to improve PHY layer characterisation of signals using YOLO networks</li>
+      </ul>
+    </li>
+    <li><strong>Nomad</strong>: Architected a high throughput spectrum sensing system with a line rate of 40Gbit/s <a href="https://drive.google.com/file/d/15gvXOEjitIAZ4lNCMfmY53ZiFbotwcAT/view?usp=share_link">[Link]</a>
+      <ul>
+        <li>Developed containerised micro-services with well-defined high throughput shared memory interface</li>
+        <li>Achieved major throughput gains with the use of copy-efficient shared memory and a Redis-based in-memory database.</li>
+      </ul>
+    </li>
+  </ul>
 </div>
 
 <div class="cv-entry">
-  <div class="cv-entry__when">Mar – Nov 2022</div>
-  <div>
-    <p class="cv-entry__title">Federated Learning</p>
-    <p class="cv-entry__note"><a href="{{ base_path }}/research/#curriculum-fl">Curriculum learning in federated settings</a> (ICCV 2023)</p>
+  <div class="cv-entry__head">
+    <span class="cv-entry__title"><strong>Federated Learning</strong>.</span>
+    <span class="cv-entry__when">Mar’22–Nov’22</span>
   </div>
+  <ul>
+    <li><strong>Curriculum FL</strong>: Studied effect of curriculum learning in a federated context. We showed that curriculum can significantly improve convergence time of training. <a href="https://arxiv.org/pdf/2212.12712">[Paper]</a></li>
+  </ul>
+</div>
+
+<h2 class="section-title">Selected Graduate Projects</h2>
+
+<div class="cv-entry">
+  <div class="cv-entry__head">
+    <span class="cv-entry__title"><strong>Course Projects</strong>, <em>UCSD</em>.</span>
+    <span class="cv-entry__when">2021–22</span>
+  </div>
+  <ul>
+    <li><strong>Audio-StyleCLIP</strong>: Extended capabilities of StyleCLIP and AudioCLIP models to create a model that can perform style transfer onto an image using an audio styling input. <a href="https://drive.google.com/file/d/1biQZ1JpUo6wGrkgxCDXgFUj3jyIyM5pi/view?usp=share_link">[Report]</a></li>
+    <li><strong>Convexifying Neural Network</strong>: Implemented the state-of-the-art technique for modelling a ReLU neural network as a convex optimisation problem, the solution of which is a globally optimal neural network. <a href="https://drive.google.com/file/d/1oQ5uePAY4xqVClkPVKg0cJHYh6mJmI7q/view?usp=share_link">[Report]</a></li>
+    <li><strong>Training Robust NN</strong>: Implemented Lipschitz constant based regularization for training robust Neural Networks and compared performance against L<sub>2</sub> and other baseline techniques. <a href="https://drive.google.com/file/d/1s24inNgky8aMOULbqM97ZtEZ4uGbdVYB/view?usp=drive_link">[Report]</a></li>
+    <li><strong>Lattice Basis Reduction Performance Study</strong>: We evaluate the basis reduction algorithms, such as LLL, BKZ, Slide, Self-dual BKZ, to study accuracy vs performance trade-off on COTS hardware. We also study scaling of these algorithms with problem size. <a href="https://drive.google.com/file/d/1IT7jyHXKjPVILGaSXuS-YBVUZCNKq731/view?usp=drive_link">[Report]</a></li>
+  </ul>
 </div>
 
 <h2 class="section-title">Publications</h2>
 
-<div class="pub-list">
-  {% assign pubs = site.publications | sort: "date" | reverse %}
-  {% for pub in pubs %}
-    {% include publication-card.html pub=pub compact=true %}
-  {% endfor %}
-</div>
+<p class="cv-row"><span><strong>MobiCom’26</strong>: “RoboNEST: Robotics Networked Edge Systems Testbed for Physical AI”. <a href="https://dl.acm.org/doi/abs/10.1145/3795866.3848480">[Demo]</a></span></p>
+<p class="cv-row"><span><strong>MobiCom’26</strong>: “WiP: mmsRAN: Multimodal Cellular Uplink for Physical AI”. <a href="https://dl.acm.org/doi/abs/10.1145/3795866.3844782">[Paper]</a></span></p>
+<p class="cv-row"><span><strong>MobiCom’24</strong>: “Nomad: Providing Insights into the Spectrum Environment”. <a href="https://dl.acm.org/doi/pdf/10.1145/3636534.3698867">[Paper]</a></span></p>
+<p class="cv-row"><span><strong>ICCV’23</strong>: “When Do Curricula Work in Federated Learning?”. <a href="https://arxiv.org/abs/2212.12712">[Paper]</a></span></p>
 
-<h2 class="section-title">Awards &amp; Fellowships</h2>
+<h2 class="section-title">Awards</h2>
 
-<div class="cv-entry">
-  <div class="cv-entry__when">2026</div>
-  <div><p><a href="https://www.qualcomm.com/research/university-relations/innovation-fellowship/2026-north-america">Qualcomm Innovation Fellowship</a></p></div>
-</div>
-<div class="cv-entry">
-  <div class="cv-entry__when">2023</div>
-  <div><p><a href="https://clpf.org/ucsd-welcome-breakfast-of-the-2023-2024-powell-fellows/">Powell Foundation Fellowship</a></p></div>
-</div>
-<div class="cv-entry">
-  <div class="cv-entry__when">2023</div>
-  <div><p>Shah Family Entrepreneurial Fellowship</p></div>
-</div>
+<p class="cv-row"><span>Qualcomm Innovation Fellowship <a href="https://www.qualcomm.com/research/university-relations/innovation-fellowship/2026-north-america#winners">[Website]</a></span><em class="cv-row__when">2026</em></p>
+<p class="cv-row"><span>Powell Foundation Fellowship <a href="https://clpf.org/ucsd-welcome-breakfast-of-the-2023-2024-powell-fellows/">[Website]</a></span><em class="cv-row__when">2023</em></p>
+<p class="cv-row"><span>Shah Family Entrepreneurial Fellowship</span><em class="cv-row__when">2023</em></p>
 
-<h2 class="section-title">Teaching &amp; Leadership</h2>
+<h2 class="section-title">Positions of Responsibility</h2>
 
-<div class="cv-entry">
-  <div class="cv-entry__when">2025 – 2026</div>
-  <div><p>Teaching Assistant, ECE 257B: Principles of Wireless Communication, UC San Diego</p></div>
-</div>
-<div class="cv-entry">
-  <div class="cv-entry__when">2023 – 2025</div>
-  <div><p>Representative, Graduate &amp; Professional Student Association, UC San Diego</p></div>
-</div>
-<div class="cv-entry">
-  <div class="cv-entry__when">2023 – 2025</div>
-  <div><p>Board Member, ECE Graduate Student Council, UC San Diego</p></div>
-</div>
-<div class="cv-entry">
-  <div class="cv-entry__when">2018 – 2019</div>
-  <div><p>President, Electronics Club, IIT Indore</p></div>
-</div>
-<div class="cv-entry">
-  <div class="cv-entry__when">2018 – 2019</div>
-  <div><p>Technical Lead, Team Robocon, IIT Indore</p></div>
-</div>
+<p class="cv-row"><span>Teaching Assistant, UCSD</span><em class="cv-row__when">2025–26</em></p>
+<p class="cv-row"><span>Graduate &amp; Professional Student Association, Representative, UCSD</span><em class="cv-row__when">2023–25</em></p>
+<p class="cv-row"><span>ECE Graduate Student Council, Board Member, UCSD</span><em class="cv-row__when">2023–25</em></p>
+<p class="cv-row"><span>Electronics Club, President, IIT Indore</span><em class="cv-row__when">2018–19</em></p>
+<p class="cv-row"><span>Team Robocon, Technical Lead, IIT Indore</span><em class="cv-row__when">2018–19</em></p>
 
 <h2 class="section-title">Service</h2>
 
-<div class="cv-entry">
-  <div class="cv-entry__when">2026</div>
-  <div><p>Reviewer and Student Panelist, S3 Workshop, ACM MobiCom</p></div>
-</div>
-<div class="cv-entry">
-  <div class="cv-entry__when">2026</div>
-  <div><p>Artifact Evaluation Committee, USENIX NSDI</p></div>
-</div>
-<div class="cv-entry">
-  <div class="cv-entry__when">2025</div>
-  <div><p>Artifact Evaluation Committee, ACM SIGCOMM</p></div>
-</div>
-<div class="cv-entry">
-  <div class="cv-entry__when">2024</div>
-  <div><p>Award Committee, Graduate &amp; Professional Student Association, UC San Diego</p></div>
-</div>
-
-<h2 class="section-title">Skills</h2>
-
-<dl class="cv-skills">
-  <dt>Programming</dt>
-  <dd>C++, Python, MATLAB</dd>
-  <dt>Systems &amp; tools</dt>
-  <dd>Docker, Kubernetes, Linux, ROS</dd>
-  <dt>Wireless</dt>
-  <dd>GNU Radio, software-defined radios</dd>
-</dl>
+<p class="cv-row"><span><strong>S3 Reviewer &amp; Student Panellist</strong>: MobiCom</span><em class="cv-row__when">2026</em></p>
+<p class="cv-row"><span><strong>Artifact Evaluation Committee</strong>: NSDI</span><em class="cv-row__when">2026</em></p>
+<p class="cv-row"><span><strong>Artifact Evaluation Committee</strong>: SIGCOMM</span><em class="cv-row__when">2025</em></p>
+<p class="cv-row"><span><strong>GPSA Award Committee</strong>: UCSD</span><em class="cv-row__when">2024</em></p>

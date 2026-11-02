@@ -7,7 +7,7 @@ author_profile: true
 
 {% include base_path %}
 
-<p class="section-intro">Projects grouped by theme, newest first. Figures come from the corresponding papers, proposals, posters, talks, and reports; click one to see it full size.</p>
+<p class="section-intro">Selected projects, organized by theme. Select a project in the PHY-layer and earlier research sections to expand its description.</p>
 
 {% for group in site.data.research_groups %}
   {% assign projects = site.research | where: "group", group.id | sort: "order" %}
@@ -17,8 +17,31 @@ author_profile: true
     {% if group.blurb %}<p class="section-intro">{{ group.blurb | markdownify | remove: "<p>" | remove: "</p>" | strip }}</p>{% endif %}
 
     {% if group.compact %}
-    <div class="mini-grid">
+    <div class="mini-grid{% if group.expandable %} mini-grid--expandable{% endif %}">
       {% for p in projects %}
+      {% if group.expandable %}
+      <details class="mini-card mini-card--expandable" id="{{ p.slug }}">
+        <summary class="mini-card__summary">
+          <span class="project-figure">
+            {% if p.image %}<img src="{{ base_path }}{{ p.image }}" alt="{{ p.image_alt | default: p.title }}" loading="lazy">{% else %}<span class="project-figure__placeholder"><i class="fa-solid fa-wave-square" aria-hidden="true"></i></span>{% endif %}
+          </span>
+          <h3 class="mini-card__title">{{ p.title }}</h3>
+          <span class="mini-card__sub">{{ p.period }}{% for badge in p.badges %} &middot; {{ badge }}{% endfor %}</span>
+          <span class="mini-card__teaser">{{ p.teaser }}</span>
+          <span class="mini-card__more"><span class="mini-card__more-closed">Details</span><span class="mini-card__more-open">Hide details</span> <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></span>
+        </summary>
+        <div class="mini-card__body">
+          {% if p.team %}<p class="mini-card__team">{{ p.team }}</p>{% endif %}
+          {{ p.content | markdownify }}
+          {% if p.links or p.image %}
+          <div class="link-row">
+            {% include link-buttons.html links=p.links %}
+            {% if p.image %}<a class="btn-link" href="{{ base_path }}{{ p.image }}" target="_blank" rel="noopener"><i class="fa-solid fa-image" aria-hidden="true"></i> Figure</a>{% endif %}
+          </div>
+          {% endif %}
+        </div>
+      </details>
+      {% else %}
       <article class="mini-card" id="{{ p.slug }}">
         {% if p.image %}<a class="project-figure" href="{{ base_path }}{{ p.image }}" target="_blank" rel="noopener"><img src="{{ base_path }}{{ p.image }}" alt="{{ p.image_alt | default: p.title }}" loading="lazy"></a>{% endif %}
         <h3 class="mini-card__title">{{ p.title }}</h3>
@@ -26,6 +49,7 @@ author_profile: true
         {{ p.content | markdownify }}
         {% if p.links %}<div class="link-row">{% include link-buttons.html links=p.links %}</div>{% endif %}
       </article>
+      {% endif %}
       {% endfor %}
     </div>
     {% else %}

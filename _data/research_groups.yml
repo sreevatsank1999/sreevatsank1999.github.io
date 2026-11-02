@@ -1,19 +1,26 @@
 # Sections of the Research page, in display order. Each project in _research/
 # names its section with `group: <id>`. Blurbs can use Markdown links.
+#
+#   compact: true      half-width boxes instead of full-width cards
+#   expandable: true   compact boxes show the project's `teaser` and expand when selected
 
 - id: physical-ai
-  title: "Systems for Physical AI"
+  title: "AI and Systems for Physical AI"
   period: "2025 – present"
-  blurb: "Robots increasingly offload perception and policy inference to GPUs at the network edge, which puts the wireless network inside their control loop. These projects measure what that loop needs from the network and build the networks, schedulers, and testbeds to deliver it. RoboNEST and mmsRAN are part of the [EdgeRIC](https://edgeric.ucsd.edu/) project."
+  blurb: "Physical AI requires models that can interpret multimodal sensor data and systems that can deliver that data and act on the result in real time. These projects address both."
 
 - id: spectrum
   title: "PHY-Layer Spectrum Intelligence"
   period: "2022 – 2026"
-  blurb: "Systems, datasets, and learning methods for understanding what is on the air, from real-time wideband sensing to detectors that can be measured, and fooled. Most of this work is part of the WCSNG lab's [spectrum sensing research](https://wcsng.ucsd.edu/spectrum_sensing.html)."
+  blurb: "Earlier work in wireless systems, covering platforms, datasets, and learning methods for understanding activity in the radio spectrum. Much of this work was carried out with the [Signals Lab](https://wcsng.ucsd.edu/signals-lab/) at UC San Diego."
+  compact: true
+  expandable: true
 
 - id: earlier
   title: "Earlier Research"
   period: "2019 – 2022"
+  compact: true
+  expandable: true
 
 - id: course
   title: "Selected Graduate Projects"

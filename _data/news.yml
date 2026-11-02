@@ -4,13 +4,13 @@
 #   text:  Markdown, rendered inline.
 
 - date: 2026-10
-  text: "Presenting the [RoboNEST](https://doi.org/10.1145/3795866.3848480) demo and our [mmsRAN](https://doi.org/10.1145/3795866.3844782) work-in-progress paper at **ACM MobiCom 2026** in Austin, TX."
+  text: "Presented the [RoboNEST](https://doi.org/10.1145/3795866.3848480) demo and the [mmsRAN](https://doi.org/10.1145/3795866.3844782) work-in-progress paper at **ACM MobiCom 2026** in Austin, TX."
 
 - date: 2026-10
-  text: "Reviewer and student panelist for the **S3 Workshop** at ACM MobiCom 2026."
+  text: "Served as a reviewer and student panelist for the **S3 Workshop** at ACM MobiCom 2026."
 
 - date: 2026-06
-  text: "Joined **Qualcomm Wireless R&D** in San Diego as a summer research intern, studying how LLMs handle RF + vision multimodal sensing."
+  text: "Joined **Qualcomm** Wireless R&D in San Diego as a research intern, studying LLMs for RF and vision multimodal sensing."
 
 - date: 2026-05
   text: "Won the [Qualcomm Innovation Fellowship 2026](https://www.qualcomm.com/research/university-relations/innovation-fellowship/2026-north-america) for *When Multimodal Sensing Meets the RAN: Sensing-to-Action Autonomy at the Edge*."
@@ -22,13 +22,13 @@
   text: "Served on the **SIGCOMM 2025** Artifact Evaluation Committee."
 
 - date: 2024-11
-  text: "[Nomad](https://doi.org/10.1145/3636534.3698867), our 40 Gbit/s spectrum sensing system, appeared at **ACM MobiCom 2024** in Washington, D.C."
+  text: "[Nomad](https://doi.org/10.1145/3636534.3698867) was presented at **ACM MobiCom 2024** in Washington, D.C."
 
 - date: 2023-10
-  text: "[*When Do Curricula Work in Federated Learning?*](https://openaccess.thecvf.com/content/ICCV2023/html/Vahidian_When_Do_Curricula_Work_in_Federated_Learning_ICCV_2023_paper.html) appeared at **ICCV 2023** in Paris."
+  text: "[*When Do Curricula Work in Federated Learning?*](https://openaccess.thecvf.com/content/ICCV2023/html/Vahidian_When_Do_Curricula_Work_in_Federated_Learning_ICCV_2023_paper.html) was presented at **ICCV 2023** in Paris."
 
 - date: 2023
   text: "Named a [Powell Foundation Fellow](https://clpf.org/ucsd-welcome-breakfast-of-the-2023-2024-powell-fellows/) for 2023–24 and received the **Shah Family Entrepreneurial Fellowship**."
 
 - date: 2023
-  text: "Started my Ph.D. at UC San Diego in the [WCSNG lab](https://wcsng.ucsd.edu/) with Prof. Dinesh Bharadia, after finishing my M.S. there."
+  text: "Began my Ph.D. at UC San Diego in the [WCSNG lab](https://wcsng.ucsd.edu/), advised by Prof. Dinesh Bharadia, following my M.S."

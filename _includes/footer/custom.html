@@ -21,4 +21,19 @@
   });
 </script>
 
+<!-- Open an expandable research box when a link points to it -->
+<script>
+  (function () {
+    function openLinkedBox() {
+      var target = location.hash && document.getElementById(decodeURIComponent(location.hash.slice(1)));
+      if (target && target.tagName === "DETAILS") {
+        target.open = true;
+        target.scrollIntoView();
+      }
+    }
+    window.addEventListener("hashchange", openLinkedBox);
+    openLinkedBox();
+  })();
+</script>
+
 <!-- end custom footer snippets -->

@@ -10,4 +10,4 @@ links:
   - label: Report
     url: https://drive.google.com/file/d/1s24inNgky8aMOULbqM97ZtEZ4uGbdVYB/view?usp=drive_link
 ---
-Used Lipschitz-constant estimates as a regularizer for training robust networks, and compared the result against L2 regularization and other baselines.
+Implemented Lipschitz-constant based regularization for training robust neural networks and compared performance against L2 and other baseline techniques.

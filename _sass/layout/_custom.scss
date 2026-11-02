@@ -137,12 +137,6 @@ html[data-theme="dark"] {
   }
 }
 
-.callout__icon {
-  flex: none;
-  font-size: 1.3em;
-  line-height: 1.2;
-}
-
 .callout--warm {
   border-left-color: var(--sk-warm-border);
   background: var(--sk-warm-bg);
@@ -188,6 +182,16 @@ html[data-theme="dark"] {
     background: var(--sk-accent-tint);
     border: 1px solid var(--sk-accent-border);
     border-radius: 999px;
+  }
+}
+
+.focus-list {
+  margin: 0 0 1.2em;
+  padding-left: 1.2em;
+
+  li {
+    margin-bottom: 0.55em;
+    line-height: 1.65;
   }
 }
 
@@ -490,9 +494,120 @@ html[data-theme="dark"] {
 }
 
 .mini-card__sub {
+  display: block;
   margin-bottom: 0.45em;
   font-size: 0.8em;
   color: var(--sk-muted);
+}
+
+/* Compact boxes that expand in place when selected */
+
+.mini-grid--expandable {
+  align-items: start;
+}
+
+.mini-card--expandable {
+  display: block;
+  padding: 0;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+
+  &:hover,
+  &[open] {
+    border-color: var(--sk-accent-border);
+    box-shadow: var(--sk-shadow-hover);
+  }
+
+  .mini-card__title {
+    @include breakpoint(700px) {
+      min-height: 2.7em;
+    }
+  }
+
+  .link-row {
+    margin-top: 0.5em;
+    padding-top: 0;
+  }
+
+  &[open] {
+    .mini-card__more-closed {
+      display: none;
+    }
+
+    .mini-card__more-open {
+      display: inline;
+    }
+
+    .mini-card__more i {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.mini-card__summary {
+  display: flex;
+  flex-direction: column;
+  padding: 0.9em 1em 0.8em;
+  border-radius: 10px;
+  cursor: pointer;
+  list-style: none;
+
+  &::-webkit-details-marker {
+    display: none;
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--sk-accent);
+    outline-offset: 2px;
+  }
+}
+
+.mini-card__teaser {
+  display: block;
+  font-size: 0.88em;
+  line-height: 1.55;
+
+  @include breakpoint(700px) {
+    min-height: calc(3 * 1.55em);
+  }
+}
+
+.mini-card__more {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  margin-top: 0.55em;
+  font-size: 0.8em;
+  font-weight: 600;
+  color: var(--sk-accent-ink);
+
+  i {
+    font-size: 0.85em;
+    transition: transform 0.15s ease;
+  }
+}
+
+.mini-card__more-open {
+  display: none;
+}
+
+.mini-card__body {
+  padding: 0 1em 1em;
+}
+
+.mini-card__team {
+  font-style: italic;
+  color: var(--sk-muted);
+}
+
+.project-figure__placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 16 / 9;
+  font-size: 2.2em;
+  color: #2b7f97;
+  background: rgba(82, 173, 200, 0.12);
+  border-radius: 4px;
 }
 
 /*
@@ -504,61 +619,72 @@ html[data-theme="dark"] {
 }
 
 .cv-entry {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr);
-  gap: 0.1em 1.2em;
-  margin: 0 0 1em;
-
-  @include breakpoint($medium) {
-    grid-template-columns: 8.5em minmax(0, 1fr);
-  }
+  margin: 0 0 0.95em;
+  font-size: 0.95em;
+  line-height: 1.55;
 
   p {
     margin: 0;
   }
 
   ul {
-    margin: 0.3em 0 0;
-    padding-left: 1.1em;
+    margin: 0.25em 0 0;
+    padding-left: 1.25em;
+    list-style-type: circle;
+  }
+
+  ul ul {
+    margin-top: 0.1em;
+    list-style-type: "– ";
   }
 
   li {
-    margin-bottom: 0.2em;
-    font-size: 0.92em;
+    margin-bottom: 0.15em;
+  }
+
+  sub {
+    font-size: 0.7em;
   }
 }
 
-.cv-entry__when {
-  padding-top: 0.12em;
-  font-size: 0.85em;
-  font-weight: 600;
-  color: var(--sk-muted);
+.cv-entry__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0 1em;
 }
 
-.cv-entry__title {
-  font-weight: 700;
+.cv-entry__title strong {
   color: var(--sk-heading);
 }
 
-.cv-entry__org {
-  font-size: 0.95em;
+.cv-entry__when {
+  margin-left: auto;
+  font-weight: 700;
+  white-space: nowrap;
+  color: var(--sk-heading);
 }
 
 .cv-entry__note {
-  font-size: 0.92em;
-  color: var(--sk-muted);
+  margin-top: 0.1em;
 }
 
-.cv-skills {
-  margin: 0;
+.archive .cv-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0 1.5em;
+  margin: 0 0 0.4em;
+  font-size: 0.95em;
+  line-height: 1.55;
 
-  dt {
-    margin-top: 0.4em;
-    font-weight: 700;
+  strong {
     color: var(--sk-heading);
   }
+}
 
-  dd {
-    margin: 0 0 0.3em;
-  }
+.cv-row__when {
+  white-space: nowrap;
+  color: var(--sk-muted);
 }

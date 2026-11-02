@@ -3,6 +3,7 @@ title: "When Do Curricula Work in Federated Learning?"
 group: earlier
 order: 1
 period: "2022"
+teaser: "A study of curriculum learning in a federated context, showing that curricula can significantly improve the convergence time of training."
 image: /images/research/curriculum-fl.png
 image_alt: "Illustration of training data split across two clients and an easy-first curriculum"
 badges: ["ICCV 2023"]
@@ -13,4 +14,4 @@ links:
   - label: arXiv
     url: https://arxiv.org/abs/2212.12712
 ---
-Curriculum learning orders training data from easy to hard. We studied it systematically in federated learning, where every client trains on its own skewed slice of the data. Ordered learning largely offsets the damage done by non-IID data, and the more the clients' distributions differ, the more they gain. We explain this with a convergence analysis that models curriculum training as local SGD with locally biased gradients. We also introduce a curriculum over clients, bringing them in from easy to hard, which compounds the gains.
+Curriculum learning orders training data from easy to hard. In federated learning, where each client trains on its own skewed slice of the data, ordered learning substantially offsets the effect of non-IID data, and clients with more divergent distributions benefit more. A convergence analysis models curriculum training as local SGD with locally biased gradients, and a curriculum over clients, introduced from easy to hard, further improves performance.

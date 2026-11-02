@@ -12,7 +12,7 @@ site_theme               : "default" # The available themes options are "default
 title                    : "Sreevatsank Kadaveru"
 title_separator          : "-"
 name                     : &name "Sreevatsank Kadaveru"
-description              : &description "Sreevatsank Kadaveru is a Ph.D. student at UC San Diego building networks and systems for Physical AI."
+description              : &description "Sreevatsank Kadaveru is a Ph.D. student at UC San Diego working on AI and Physical AI, with significant systems-building experience and a background in wireless systems."
 url                      : https://sreevatsankk.github.io # The base hostname & protocol for your site
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "sreevatsankk/sreevatsankk.github.io"
@@ -38,7 +38,7 @@ author:
   googlescholar    : "https://scholar.google.com/citations?user=dWqKf1AAAAAJ"
   inspire-hep      : # URL
   impactstory      : # URL
-  orcid            : # URL
+  orcid            : "https://orcid.org/0009-0008-4670-7737"
   semantic         : # URL
   ssrn             : # URL
   pubmed           : # URL
@@ -138,6 +138,7 @@ social:
     - "https://github.com/sreevatsankk"
     - "https://www.linkedin.com/in/sreevatsank-k"
     - "https://scholar.google.com/citations?user=dWqKf1AAAAAJ"
+    - "https://orcid.org/0009-0008-4670-7737"
 
 # Analytics
 analytics:
@@ -174,6 +175,7 @@ exclude:
   - gulpfile.js
   - LICENSE
   - local
+  - tools
   - log
   - node_modules
   - package.json*

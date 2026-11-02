@@ -8,12 +8,12 @@ Built with Jekyll on the [AcademicPages](https://github.com/academicpages/academ
 
 | What | File(s) |
 | --- | --- |
-| Name, sidebar bio, email, Google Scholar / GitHub / LinkedIn | `_config.yml` (`author:`) |
+| Name, sidebar bio, email, Google Scholar / ORCID / GitHub / LinkedIn | `_config.yml` (`author:`) |
 | Homepage: intro, internship callout, research overview | `_pages/about.html` |
 | Homepage news timeline | `_data/news.yml` |
 | Research projects | `_research/*.md`, with sections defined in `_data/research_groups.yml` |
 | Publications | `_publications/*.md` |
-| CV page | `_pages/cv.html` (set `cv_pdf` in `_config.yml` to add a "Download PDF" button) |
+| CV page | `_pages/cv.html`, which mirrors the wording and structure of the resume (set `cv_pdf` in `_config.yml` to add a "Download PDF" button) |
 | Top navigation | `_data/navigation.yml` |
 | Profile photo, figures, favicons, social preview | `images/` |
 | Site-specific styles | `_sass/layout/_custom.scss` |
@@ -52,7 +52,7 @@ bibtex: |
 
 ### Add a research project
 
-Create `_research/name.md`. `group` picks the section on the Research page and `order` sorts projects within it. Figures go in `images/research/`. Use `figure: wide` for very wide figures, which are shown above the text instead of beside it. The Markdown body is the description.
+Create `_research/name.md`. `group` picks the section on the Research page and `order` sorts projects within it. Figures go in `images/research/`. Use `figure: wide` for very wide figures, which are shown above the text instead of beside it. The Markdown body is the description. Sections marked `compact` in `_data/research_groups.yml` show half-width boxes, and those also marked `expandable` need a one-sentence `teaser`, which is shown until the box is selected.
 
 ```yaml
 ---
